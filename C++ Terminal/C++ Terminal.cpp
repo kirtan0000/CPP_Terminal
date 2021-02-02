@@ -84,14 +84,9 @@ void handleArg(const std::string& argument)
         }
 
     }
-    else if (beg == "help") {
+    else if (beg == "help" || beg == "-help") {
 
-        cout << endl << "Did you mean '--help'?" << endl;
-
-    }
-    else if (beg == "-help") {
-
-        cout << endl << "Did you mean '--help'?" << endl;
+        cout << "Did you mean '--help'?" << endl;
 
     }
     else if (beg == "" || beg == " ") {
